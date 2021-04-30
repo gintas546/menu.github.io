@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="lt">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu</title>
+        <style>
+
+            @import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+                nav {
+                    font-family: "Zen Dots", cursive;
+                    padding: 1rem;
+                    }
+                .nav li {
+                    background-color: rgb(255, 255, 255);
+                    border-radius: 5px 10px;
+                    text-align: center;
+                        }
+                .nav ul {
+                    *zoom:1;
+                    list-style:none;
+                    margin:0;
+                    padding:0;
+                        }
+                .nav ul:before,.nav ul:after {
+                    content:"";
+                    display:table;
+                        }
+                .nav ul:after {
+                    clear:both;
+                        }
+                .nav ul > li {
+                    float:left;
+                    position:relative;
+                        }
+                .nav a {
+                    display:block;
+                    padding:10px 20px;
+                    line-height:1.2em;
+                    color:rgb(98, 0, 255);
+                        }
+                .nav a:hover {
+                    text-decoration:none;
+                    background:#5afcb0;
+                        }
+                .nav li ul li {
+                    width:200px;
+                        }
+                .nav li ul a {
+                    border:none;
+                        }
+                .nav li ul {
+                    position:absolute;
+                    left:0;
+                    top:36px;
+                    z-index:1;
+                    visibility:hidden;
+                    opacity:0;
+                    filter:alpha(opacity=0);
+                    -webkit-transition:200ms ease;
+                    -moz-transition:200ms ease;
+                    -o-transition:200ms ease;
+                    transition:200ms ease;
+                        }
+                .nav ul > li:hover ul {
+                    visibility:visible;
+                    opacity:1;
+                    filter:alpha(opacity=90);
+                        }
+                </style>
+                </head>
+<body>
+        <nav class="nav">
+                        <ul>
+                            <li>
+                                <a href="#">Organizators</a>
+                                <ul>
+                                    <li><a href="#">Itaka</a></li>
+                                    <li><a href="#">Novaturas</a></li>
+                                    <li><a href="#">TezTour</a></li>
+                                    <li><a href="#">TUI Baltics</a></li>
+                                    <li><a href="#">Tiketa Tour</a></li>
+                                    <li><a href="#">Coral Travel</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Sightseeing trips</a>
+                                <ul>
+                                    <li><a href="#">By bus</a></li>
+                                    <li><a href="#">By plane</a></li>
+                                    <li><a href="#">For teams</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Destinations</a>
+                                <ul>
+                                    <li><a href="#">Turkey</a></li>
+                                    <li><a href="#">Greece</a></li>
+                                    <li><a href="#">Egypt</a></li>
+                                    <li><a href="#">Tunisia</a></li>
+                                    <li><a href="#">Italy</a></li>
+                                    <li><a href="#">Bulgaria</a></li>
+                                    <li><a href="#">Canarian Islands</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+    </nav>
+</body>
+</html>
